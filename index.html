@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<head>
+	<link rel="stylesheet" href="wea.css">
+	<link rel="stylesheet" href=
+"https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+	<link rel="stylesheet" href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+	<link rel="stylesheet" href=
+"https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+	<title>weather App</title>
+</head>
+
+<body>
+	<div class="container">
+		<div class="weather-card">
+			<h1 style="color: rgb(74, 179, 221);">
+				shriya pandey
+			</h1>
+			<h3>
+				Weather App
+			</h3>
+			<input type="text" id="city-input"
+				placeholder="Enter city name">
+			<button id="city-input-btn"
+					onclick="weatherFn($('#city-input').val())">
+					Get Weather
+			</button>
+			<div id="weather-info"
+				class="animate__animated animate__fadeIn">
+				<h3 id="city-name"></h3>
+				<p id="date"></p>
+				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAbxJREFUSEu11U+ITlEYBvDfkCysJEopmthbywYLlhbKnmYWIjHNkD8hhAgLMxvs7ZQdhZW1tbIzo0bIykL5c16dT7fTvd+5n745m9u5973Pc97nfd/nTFjhNbHC+EYhiNhf+UC9/+sdyN/DjI3gIhbwpZDwdyZZXbzfhCO4WUrelsF5XMM77MXHSp224DW24yxuNePbCLbiFSYxg7sVgrkM+j4f6EONIL5HylO4noMP4Rj25P1LzONp3p/DoxTzqY9EZcydnElbIpdT8a8My7DWRYfxJANczYWP7XFErWLtx4sukhrBW+zEadwrQAbN8BwHagTNHo/YAfFPrMJ6fCtANucO+4oNxZz8wxgAdRH8SIVe00EQjbCM71hXI+jK8E3Sd1cCiVa83SFRzEDMS+uq1eBgoxWjyA+wNk34CcxmxNA/6vBfBPHTsDa90JiVkQhC36PptDcag3YSu/P+GR4jnrGiox72HbRt2VvieQr3hw0SzmSTC6uISV9sxrfVINIOvcPs9iXLWKoQhNmFd+3oa3aBdyl7zecCvMuuN6aZmG6rR62LymzHduG0qTLWG60ie//Po0jUH7UR+QcpUk4ZRDtj1AAAAABJRU5ErkJggg=="/>
+				<p id="temperature"></p>
+				<p id="description"></p>
+				<p id="wind-speed"></p>
+			</div>
+		</div>
+	</div>
+	<script src=
+"https://code.jquery.com/jquery-3.6.0.min.js">
+	</script>
+	<script src=
+"https://momentjs.com/downloads/moment.min.js">
+	</script>
+	<script src="wea.js"></script>
+</body>
+
+</html>
